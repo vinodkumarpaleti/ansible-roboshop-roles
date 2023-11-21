@@ -1,3 +1,9 @@
+    # I need to refer nodejs tasks in common folder
+    # redis is one role
+    # common is also another role
+    # I need to import a task nodejs.yaml in catalogue
+
+
     - name: Install redis repo
       ansible.builtin.yum:
         name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm

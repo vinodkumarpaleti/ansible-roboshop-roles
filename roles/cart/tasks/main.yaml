@@ -1,5 +1,5 @@
 # I need to refer nodejs tasks in common folder
-# user is one role
+# cart is one role
 # common is also another role
 # I need to import a task nodejs.yaml in catalogue
 
@@ -17,11 +17,6 @@
   ansible.builtin.command: npm install
   args:
     chdir: /app
-
-- name: Load Schema
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: load-mongo-schema
 
 - name: SetUp Application
   ansible.builtin.import_role:
